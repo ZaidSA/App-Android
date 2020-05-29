@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Covid\nSafe</string>
-    <string name="main_header_text">Covid\nSafe</string>
-    <string name="app_name_one_line">CovidSafe</string>
+    <string name="app_name">Kovid19Track</string>
+    <string name="main_header_text">Kovid19Track</string>
+    <string name="app_name_one_line">Kovid19Track</string>
     <string name="history_header_text">History</string>
     <string name="permissions_header_text"><![CDATA[<font color=#000000>Select your preferences</font>]]></string>
     <string name="health_header_text"><![CDATA[<font color=#000000>Health</font>]]></string>
@@ -26,7 +26,7 @@
     <string name="warning">Warning</string>
     <string name="logging_now_off">Logging is now turned off.</string>
     <string name="inter_prep">Interview Preparation</string>
-    <string name="email_subject">CovidSafe Contact Tracer Interview Information Packet</string>
+    <string name="email_subject">Kovid19Track Contact Tracer Interview Information Packet</string>
     <string name="symptom_logs">Symptom logs</string>
     <string name="location_logs">Location logs</string>
     <string name="contact_logs">Contact logs</string>
@@ -61,38 +61,38 @@
         What is the purpose of this app?
     </string>
     <string name="a1">
-        CovidSafe is an app that seeks to reduce the spread of coronavirus in the community, specifically by helping people learn if they\'ve been exposed, connecting them to the appropriate public health guidance, and by enabling effective contact tracing. CovidSafe also reduces the burden on public health systems by offering people who have been positively diagnosed and their potential exposures, a safe, private, and fast way to communicate this information to the people who need it — public health authorities and their contact tracing teams.
+        Kovid19Track is an app that seeks to reduce the spread of coronavirus in the community, specifically by helping people learn if they\'ve been exposed, connecting them to the appropriate public health guidance, and by enabling effective contact tracing. CovidSafe also reduces the burden on public health systems by offering people who have been positively diagnosed and their potential exposures, a safe, private, and fast way to communicate this information to the people who need it — public health authorities and their contact tracing teams.
     </string>
     <string name="q2">
         How does this app benefit me?
     </string>
     <string name="a2">
-        CovidSafe offers several features to protect both you and your community:\n
+        Kovid19Track offers several features to protect both you and your community:\n
         •	Get notified about possible exposure. You may be notified if someone who was near you within the last two weeks has come down with symptoms of COVID-19. The measure of \‘near\’ is not as precise as the medical definition (within 6 feet for more than 10 minutes), but it is accurate up to a few meters.\n
         •	Track your symptoms. The symptoms you track may be useful to assist public health teams if you are confirmed positive, and for having this information readily available if you are exposed and called for a contact tracing interview. You can also get reliable, vetted information about SARS-CoV-2, why it\'s so dangerous, and how it spreads.
     </string>
     <string name="q3">
-        Who can use CovidSafe?
+        Who can use Kovid19Track?
     </string>
     <string name="a3">
-        When it becomes available for use, CovidSafe is free, and anyone can use it.
+        When it becomes available for use, Kovid19Track is free, and anyone can use it.
     </string>
     <string name="q4">
         Who else benefits from my participation with this app?
     </string>
     <string name="a4">
-        CovidSafe is capable of alerting people who have been in areas where coronavirus is active. If you test positive for coronavirus, you\'ll also be able to anonymously notify others you may have been in contact with over the past two weeks to alert them that they may have been exposed, and to prepare them for potential contact tracing interviews.
+        Kovid19Track is capable of alerting people who have been in areas where coronavirus is active. If you test positive for coronavirus, you\'ll also be able to anonymously notify others you may have been in contact with over the past two weeks to alert them that they may have been exposed, and to prepare them for potential contact tracing interviews.
     </string>
     <string name="q5">
-        How does CovidSafe help public health officials?
+        How does Kovid19Track help public health officials?
     </string>
     <string name="a5">
-        Traditional contact tracing interviews done by public health services are important, laborious, complicated and can sometimes omit important contacts because patients forget to mention them. CovidSafe helps people who have tested positive remember locations they’ve visited recently, by providing an objective log, which they can then share with contact tracing teams. There is also functionality to organize the contact information of known contacts, which streamlines the interview process and enables contact tracers to work faster.
+        Traditional contact tracing interviews done by public health services are important, laborious, complicated and can sometimes omit important contacts because patients forget to mention them. Kovid19Track helps people who have tested positive remember locations they’ve visited recently, by providing an objective log, which they can then share with contact tracing teams. There is also functionality to organize the contact information of known contacts, which streamlines the interview process and enables contact tracers to work faster.
     </string>
 
     <!--    privacy-->
     <string name="pq1">
-        If I test positive and I disclose it via CovidSafe, what information is revealed to others?
+        If I test positive and I disclose it via Kovid19Track, what information is revealed to others?
     </string>
     <string name="pa1">
         Other people with the application, who have been exposed may be notified, along with the time the exposure occurred. No other information will be revealed.
@@ -125,7 +125,7 @@
         What data is stored on my phone? What data about me is stored publicly?
     </string>
     <string name="pa6">
-        Each phone broadcasts a random signal (using Bluetooth) to other nearby phones. All phones remember the signals they send and receive for two weeks. These broadcast signals can be thought of as non-identifying random numbers. The signal each phone broadcasts changes, so the signals remain anonymous and can’t be linked to a specific person. If someone tests positive and chooses to disclose this information to help others, they would be disclosing only their phone\'s broadcasts for the past two weeks. This lets other people using CovidSafe check if they were near the infected person to determine if they were exposed, based on their own phones\' broadcasts.
+        Each phone broadcasts a random signal (using Bluetooth) to other nearby phones. All phones remember the signals they send and receive for two weeks. These broadcast signals can be thought of as non-identifying random numbers. The signal each phone broadcasts changes, so the signals remain anonymous and can’t be linked to a specific person. If someone tests positive and chooses to disclose this information to help others, they would be disclosing only their phone\'s broadcasts for the past two weeks. This lets other people using Kovid19Track check if they were near the infected person to determine if they were exposed, based on their own phones\' broadcasts.
     </string>
     <string name="pq7">
         How does location tracking work?
@@ -151,7 +151,7 @@
         What is contact tracing?
     </string>
     <string name="aa1">
-Contact tracing is a process that helps identify all the people who may have come into contact with a person who is ill. Traditionally, contact tracing is accomplished by public health workers interviewing the person who is ill to learn about people they’ve been in contact with and locations they\'ve recently visited within a specific period of time, such as the past two weeks. With CovidSafe, tracing is done through the app instead of in person.
+Contact tracing is a process that helps identify all the people who may have come into contact with a person who is ill. Traditionally, contact tracing is accomplished by public health workers interviewing the person who is ill to learn about people they’ve been in contact with and locations they\'ve recently visited within a specific period of time, such as the past two weeks. With Kovid19Track, tracing is done through the app instead of in person.
     </string>
     <string name="aq2">
         Why should I report my illness?
@@ -200,7 +200,7 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="download_complete">Download complete!</string>
     <string name="last_submitted">Last submitted</string>
     <string name="phone">911</string>
-    <string name="privacyDisclaimer">Any information collected on CovidSafe is stored securely and locally in your app, and remain private to you.</string>
+    <string name="privacyDisclaimer">Any information collected on Kovid19Track is stored securely and locally in your app, and remain private to you.</string>
     <string name="privacyDisclaimer2">This information is stored securely and locally on your app, and remains private to you.</string>
     <string name="perm_gps_rationale">Without this permission, we will be unable to capture location information. Are you sure you want to deny this permission?</string>
     <string name="perm_gps_ask">We require access to location information when the app is closed. Would you like to open app settings to enable this?</string>
@@ -259,7 +259,7 @@ Contact tracing is a process that helps identify all the people who may have com
 
     <string name="logging">Limited trace data is being collected. We keep your identity anonymous.<![CDATA[<font color=#8d55e9><br/><b><a href="https://covidsafe.cs.washington.edu/">Learn More</a></b></font>]]></string>
     <string name="stopping">Turn broadcasting on to improve the accuracy of your notifications. <![CDATA[<font color=#8d55e9><br/><b><a href="https://covidsafe.cs.washington.edu/">Learn More</a></b></font>]]></string>
-    <string name="learn_about_us">Download and learn more about the CovidSafe app at </string>
+    <string name="learn_about_us">Download and learn more about the Kovid19Track app at </string>
     <string name="select_share">Select a sharing option</string>
     <string name="faq">FAQ</string>
     <string name="kingCountyLink">https://kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx</string>
@@ -279,7 +279,7 @@ Contact tracing is a process that helps identify all the people who may have com
         Learn more
     </string>
     <string name="permissionsHeader">
-        Enable real-time notifications to get alerts about potential exposures and public health messages relevant to you.\n\nCovidSafe reveals no information about you without your consent.
+        Enable real-time notifications to get alerts about potential exposures and public health messages relevant to you.\n\nKovid19Track reveals no information about you without your consent.
     </string>
 
     <string name="cancel">Cancel</string>
@@ -310,7 +310,7 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="setting1desc">Number of days until local logs are automatically deleted.</string>
 
     <string name="storyTitle1">
-        Welcome to CovidSafe
+        Welcome to Kovid19Track
     </string>
     <string name="storyTitle2">
         Exposure Notifications
@@ -326,7 +326,7 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="exposed">You may have been exposed</string>
 
     <string name="story1">
-        CovidSafe notifies you if you may have been exposed to coronavirus and helps keep you and your community safer.
+        Kovid19Track notifies you if you may have been exposed to coronavirus and helps keep you and your community safer.
     </string>
     <string name="story2">
         Learn if you might have been exposed. If you\'ve recently been in close contact with someone recently diagnosed with COVID-19. You\'ll get a notification.
@@ -445,13 +445,13 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="previous_btn_text">Previous</string>
     <string name="how_to_prepare_for_your_interview">How to prepare for your interview</string>
     <string name="interview_preparation_description_text">During your interview, a healthcare nurse will be collecting a list of critical information to help identify those who may have been exposed.
-You can prepare a list of informaton they will ask about based on information collected through CovidSafe. This information includes:</string>
+You can prepare a list of informaton they will ask about based on information collected through Kovid19Track. This information includes:</string>
     <string name="symptoms_experienced_last_14_days">Symptoms you’ve experienced in the last 14 days</string>
     <string name="location_visited_in_last_14_days">Locations you’ve visited in the last 14 days</string>
     <string name="people_you_have_been_in_contact_last_14_days">People you’ve been in direct contact with over the last 14 days</string>
     <string name="get_started_text">Get started</string>
     <string name="frequently_asked_questions">Frequently Asked Questions</string>
-    <string name="about_covidsafe">About CovidSafe</string>
+    <string name="about_covidsafe">About Kovid19Track</string>
     <string name="privacy_and_security">Privacy and Security</string>
     <string name="exposure_history">Exposure history</string>
     <string name="what_to_do_if_you_are_sick">What to do if you are sick</string>
@@ -467,8 +467,8 @@ You can prepare a list of informaton they will ask about based on information co
     <string name="new_report_text">New Report</string>
     <string name="recent_logs">Recent logs</string>
     <string name="learn_how_we_protect_your_privacy">Learn about how we protect your privacy</string>
-    <string name="welcome_to_covidsafe_text">Welcome to CovidSafe</string>
-    <string name="covidsafe_notifies_you">CovidSafe notifies you if you may have been exposed to coronavirus and helps you monitor any symptoms you\'re having.</string>
+    <string name="welcome_to_covidsafe_text">Welcome to Kovid19Track</string>
+    <string name="covidsafe_notifies_you">Kovid19Track notifies you if you may have been exposed to coronavirus and helps you monitor any symptoms you\'re having.</string>
     <string name="clear_all_text">Clear all</string>
     <string name="save_text">Save</string>
     <string name="cough_text">Cough</string>

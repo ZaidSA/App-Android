@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    tools:context="edu.uw.covidsafe.ui.MainActivity">
+    tools:context="com.kovid19track.kovid19track.ui.MainActivity">
 
     <FrameLayout
         android:id="@+id/fragment_container"

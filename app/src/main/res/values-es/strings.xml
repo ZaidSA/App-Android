@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Covid \nSafe</string>
-    <string name="main_header_text">Covid \nSafe</string>
-    <string name="app_name_one_line">CovidSafe</string>
+    <string name="app_name">Kovid19Track</string>
+    <string name="main_header_text">Kovid19Track</string>
+    <string name="app_name_one_line">Kovid19Track</string>
     <string name="history_header_text">Historia</string>
     <string name="permissions_header_text"><![CDATA[<font color=#000000>Selecciona tus preferencias</font>]]></string>
     <string name="health_header_text"><![CDATA[<font color=#000000>Salud</font>]]></string>
@@ -26,7 +26,7 @@
     <string name="warning">Advertencia</string>
     <string name="logging_now_off">El registro ahora está desactivado.</string>
     <string name="inter_prep">Preparación de entrevistas</string>
-    <string name="email_subject">Paquete de información de la entrevista de CovidSafe Contact Tracer</string>
+    <string name="email_subject">Paquete de información de la entrevista de Kovid19Track Contact Tracer</string>
     <string name="symptom_logs">Registros de síntomas [DEMO]</string>
     <string name="location_logs">Registros de ubicación</string>
     <string name="contact_logs">Registros de contacto</string>
@@ -42,18 +42,18 @@
     <string name="contact_desc_4">No se preocupe, siempre puede volver a editar esta lista más tarde. Puede exportar esta información a un registro de correo electrónico por sí mismo.</string>
 
     <string name="q1">¿Cuál es el propósito de esta aplicación?</string>
-    <string name="a1">CovidSafe es una aplicación que busca reducir la propagación del coronavirus en la comunidad, específicamente ayudando a las personas a saber si han estado expuestas, conectándolas con la orientación adecuada de salud pública y permitiendo un seguimiento de contactos efectivo. CovidSafe también reduce la carga sobre los sistemas de salud pública al ofrecer a las personas que han sido diagnosticadas positivamente y sus posibles exposiciones, una forma segura, privada y rápida de comunicar esta información a las personas que la necesitan: las autoridades de salud pública y sus equipos de búsqueda de contactos.</string>
+    <string name="a1">Kovid19Track es una aplicación que busca reducir la propagación del coronavirus en la comunidad, específicamente ayudando a las personas a saber si han estado expuestas, conectándolas con la orientación adecuada de salud pública y permitiendo un seguimiento de contactos efectivo. CovidSafe también reduce la carga sobre los sistemas de salud pública al ofrecer a las personas que han sido diagnosticadas positivamente y sus posibles exposiciones, una forma segura, privada y rápida de comunicar esta información a las personas que la necesitan: las autoridades de salud pública y sus equipos de búsqueda de contactos.</string>
     <string name="q2">¿Cómo me beneficia esta aplicación?</string>
-    <string name="a2">CovidSafe ofrece varias funciones para protegerlo a usted y a su comunidad: \n        • Recibir notificaciones sobre una posible exposición. Es posible que se le notifique si alguien que estuvo cerca de usted en las últimas dos semanas ha presentado síntomas de COVID-19. La medida de "cerca" no es tan precisa como la definición médica (dentro de 6 pies por más de 10 minutos), pero es precisa hasta unos pocos metros. \n         • Rastree sus síntomas. Los síntomas que rastrea pueden ser útiles para ayudar a los equipos de salud pública si se confirma que es positivo, y para tener esta información fácilmente disponible si está expuesto y solicita una entrevista de seguimiento de contactos. También puede obtener información confiable y verificada sobre el SARS-CoV-2, por qué es tan peligroso y cómo se propaga.</string>
-    <string name="q3">¿Quién puede usar CovidSafe?</string>
-    <string name="a3">Cuando está disponible para su uso, CovidSafe es gratuito y cualquiera puede usarlo.</string>
+    <string name="a2">Kovid19Track ofrece varias funciones para protegerlo a usted y a su comunidad: \n        • Recibir notificaciones sobre una posible exposición. Es posible que se le notifique si alguien que estuvo cerca de usted en las últimas dos semanas ha presentado síntomas de COVID-19. La medida de "cerca" no es tan precisa como la definición médica (dentro de 6 pies por más de 10 minutos), pero es precisa hasta unos pocos metros. \n         • Rastree sus síntomas. Los síntomas que rastrea pueden ser útiles para ayudar a los equipos de salud pública si se confirma que es positivo, y para tener esta información fácilmente disponible si está expuesto y solicita una entrevista de seguimiento de contactos. También puede obtener información confiable y verificada sobre el SARS-CoV-2, por qué es tan peligroso y cómo se propaga.</string>
+    <string name="q3">¿Quién puede usar Kovid19Track?</string>
+    <string name="a3">Cuando está disponible para su uso, Kovid19Track es gratuito y cualquiera puede usarlo.</string>
     <string name="q4">¿Quién más se beneficia de mi participación con esta aplicación?</string>
-    <string name="a4">CovidSafe es capaz de alertar a las personas que han estado en áreas donde el coronavirus está activo. Si su prueba de coronavirus es positiva, también podrá notificar anónimamente a otras personas con las que haya estado en contacto durante las últimas dos semanas para alertarlos de que pueden haber estado expuestos y prepararlos para posibles entrevistas de rastreo de contactos.</string>
-    <string name="q5">¿Cómo ayuda CovidSafe a los funcionarios de salud pública?</string>
-    <string name="a5">Las entrevistas tradicionales de rastreo de contactos realizadas por los servicios de salud pública son importantes, laboriosas, complicadas y a veces pueden omitir contactos importantes porque los pacientes olvidan mencionarlos. CovidSafe ayuda a las personas que han evaluado lugares de recuerdo positivos que visitaron recientemente, proporcionando un registro objetivo, que luego pueden compartir con los equipos de seguimiento de contactos. También existe una funcionalidad para organizar la información de contacto de contactos conocidos, lo que agiliza el proceso de la entrevista y permite que los rastreadores de contactos trabajen más rápido.</string>
+    <string name="a4">Kovid19Track es capaz de alertar a las personas que han estado en áreas donde el coronavirus está activo. Si su prueba de coronavirus es positiva, también podrá notificar anónimamente a otras personas con las que haya estado en contacto durante las últimas dos semanas para alertarlos de que pueden haber estado expuestos y prepararlos para posibles entrevistas de rastreo de contactos.</string>
+    <string name="q5">¿Cómo ayuda Kovid19Track a los funcionarios de salud pública?</string>
+    <string name="a5">Las entrevistas tradicionales de rastreo de contactos realizadas por los servicios de salud pública son importantes, laboriosas, complicadas y a veces pueden omitir contactos importantes porque los pacientes olvidan mencionarlos. Kovid19Track ayuda a las personas que han evaluado lugares de recuerdo positivos que visitaron recientemente, proporcionando un registro objetivo, que luego pueden compartir con los equipos de seguimiento de contactos. También existe una funcionalidad para organizar la información de contacto de contactos conocidos, lo que agiliza el proceso de la entrevista y permite que los rastreadores de contactos trabajen más rápido.</string>
 
 
-    <string name="pq1">Si el resultado es positivo y lo divulgo a través de CovidSafe, ¿qué información se revela a los demás?</string>
+    <string name="pq1">Si el resultado es positivo y lo divulgo a través de Kovid19Track, ¿qué información se revela a los demás?</string>
     <string name="pa1">Otras personas con la aplicación, que han sido expuestas pueden ser notificadas, junto con el momento en que ocurrió la exposición. Ninguna otra información será revelada.</string>
     <string name="pq2">Si el resultado es negativo, ¿puede una persona malintencionada tener acceso a las transmisiones de mi teléfono y denunciarme como positivo?</string>
     <string name="pa2">No, esto no es posible. La aplicación está encriptada para evitar que ocurra utilizando tecnología de seguridad similar utilizada para otros fines, como la banca en línea.</string>
@@ -64,7 +64,7 @@
     <string name="pq5">¿Pueden otros adivinar la identidad de una persona que opta por informar que ha dado positivo?</string>
     <string name="pa5">Posiblemente. Una persona que estaba cerca de alguien que dio positivo en el examen puede adivinar la identidad de la persona infectada. Si hay dos o más personas que estaban cerca de alguien que dio positivo, el proceso de identificación de la persona infectada puede ser más fácil. Sin embargo, la identidad de la persona nunca se transmitirá directamente. Las identidades de las personas no se almacenan en los datos. Solo se almacena la transmisión aleatoria de la persona infectada.</string>
     <string name="pq6">¿Qué datos se almacenan en mi teléfono? ¿Qué datos sobre mí se almacenan públicamente?</string>
-    <string name="pa6">Cada teléfono emite una señal aleatoria (usando Bluetooth) a otros teléfonos cercanos. Todos los teléfonos recuerdan las señales que envían y reciben durante dos semanas. Estas señales de transmisión pueden considerarse como números aleatorios no identificables. La señal que transmite cada teléfono cambia, por lo que las señales permanecen anónimas y no se pueden vincular a una persona específica. Si alguien da positivo y decide divulgar esta información para ayudar a otros, solo divulgará las transmisiones de su teléfono durante las últimas dos semanas. Esto permite que otras personas que usan CovidSafe comprueben si estaban cerca de la persona infectada para determinar si estuvieron expuestos, en función de las transmisiones de sus propios teléfonos.</string>
+    <string name="pa6">Cada teléfono emite una señal aleatoria (usando Bluetooth) a otros teléfonos cercanos. Todos los teléfonos recuerdan las señales que envían y reciben durante dos semanas. Estas señales de transmisión pueden considerarse como números aleatorios no identificables. La señal que transmite cada teléfono cambia, por lo que las señales permanecen anónimas y no se pueden vincular a una persona específica. Si alguien da positivo y decide divulgar esta información para ayudar a otros, solo divulgará las transmisiones de su teléfono durante las últimas dos semanas. Esto permite que otras personas que usan Kovid19Track comprueben si estaban cerca de la persona infectada para determinar si estuvieron expuestos, en función de las transmisiones de sus propios teléfonos.</string>
     <string name="pq7">¿Cómo funciona el seguimiento de ubicación?</string>
     <string name="pa7">Consulte la sección de Bluetooth en el documento técnico de PACT en nuestro sitio web.</string>
     <string name="pq8">¿Se compartirá esta información con las agencias gubernamentales?</string>
@@ -74,7 +74,7 @@
 
 
     <string name="aq1">¿Qué es el rastreo de contactos?</string>
-    <string name="aa1">El rastreo de contactos es un proceso que ayuda a identificar a todas las personas que pueden haber entrado en contacto con una persona enferma. Tradicionalmente, el seguimiento de contactos se realiza mediante trabajadores de salud pública que entrevistan a la persona que está enferma para conocer a las personas con las que han estado en contacto y los lugares que han visitado recientemente en un período de tiempo específico, como las últimas dos semanas. Con CovidSafe, el seguimiento se realiza a través de la aplicación en lugar de en persona.</string>
+    <string name="aa1">El rastreo de contactos es un proceso que ayuda a identificar a todas las personas que pueden haber entrado en contacto con una persona enferma. Tradicionalmente, el seguimiento de contactos se realiza mediante trabajadores de salud pública que entrevistan a la persona que está enferma para conocer a las personas con las que han estado en contacto y los lugares que han visitado recientemente en un período de tiempo específico, como las últimas dos semanas. Con Kovid19Track, el seguimiento se realiza a través de la aplicación en lugar de en persona.</string>
     <string name="aq2">¿Por qué debo informar mi enfermedad?</string>
     <string name="aa2">Si se enferma, puede usar la aplicación para mejorar la eficiencia y la integridad de las entrevistas manuales de seguimiento de contactos. Su privacidad se maximiza al garantizar que todos los datos permanezcan en su dispositivo, excepto lo que voluntariamente revela a las autoridades sanitarias para permitir el seguimiento de contactos.</string>
 
@@ -116,7 +116,7 @@
 
     <string name="last_submitted">Último enviado</string>
     <string name="phone">911</string>
-    <string name="privacyDisclaimer">Cualquier información recopilada en CovidSafe se almacena de forma segura y local en su aplicación, y es privada para usted.</string>
+    <string name="privacyDisclaimer">Cualquier información recopilada en Kovid19Track se almacena de forma segura y local en su aplicación, y es privada para usted.</string>
     <string name="privacyDisclaimer2">Esta información se almacena de forma segura y local en su aplicación, y permanece privada para usted.</string>
     <string name="perm_gps_rationale">Sin este permiso, no podremos capturar información de ubicación. ¿Estás seguro de que quieres negar este permiso?</string>
     <string name="perm_gps_ask">Requerimos acceso a la información de ubicación cuando la aplicación está cerrada. ¿Desea abrir la configuración de la aplicación para habilitar esto?</string>
@@ -159,7 +159,7 @@
 
     <string name="turn_loc_on">Necesitamos servicios de ubicación habilitados para enviar su informe de infección. Habilite el permiso de los servicios de ubicación.</string>
     <string name="turn_loc_on2">Necesitamos servicios de ubicación habilitados para verificar los anuncios. Habilite el permiso de los servicios de ubicación.</string>
-    <string name="learn_about_us">Descargue y aprenda más sobre la aplicación CovidSafe en</string>
+    <string name="learn_about_us">Descargue y aprenda más sobre la aplicación Kovid19Track en</string>
     <string name="select_share">Selecciona una opción para compartir</string>
     <string name="faq">Preguntas más frecuentes</string>
     <string name="kingCountyLink">https://kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx</string>
@@ -177,7 +177,7 @@
     <string name="lipsum5">Egestas tellus rutrum tellus ultrices in iaculis pellentesque eu tincidunt?</string>
     <string name="lipsum6">Odio tempor orci dapibus ultrices en iaculis</string>
     <string name="privacyText">Aprende más</string>
-    <string name="permissionsHeader">Habilite las notificaciones en tiempo real para recibir alertas sobre posibles exposiciones y mensajes de salud pública relevantes para usted. \n \nCovidSafe no revela información sobre usted sin su consentimiento.</string>
+    <string name="permissionsHeader">Habilite las notificaciones en tiempo real para recibir alertas sobre posibles exposiciones y mensajes de salud pública relevantes para usted. \n \nKovid19Track no revela información sobre usted sin su consentimiento.</string>
 
     <string name="cancel">Cancelar</string>
     <string name="onset_date">Fecha de comienzo</string>
@@ -200,7 +200,7 @@
     <string name="setting1">Longitud de almacenamiento de datos</string>
     <string name="setting1desc">Número de días hasta que los registros locales se eliminen automáticamente.</string>
 
-    <string name="storyTitle1">Bienvenido a CovidSafe</string>
+    <string name="storyTitle1">Bienvenido a Kovid19Track</string>
     <string name="storyTitle2">Notificaciones de exposición</string>
     <string name="storyTitle3">Consejos de autocuidado</string>
     <string name="storyTitle4">Tu privacidad</string>
@@ -208,7 +208,7 @@
     <string name="sure_delete">¿Estas seguro que quieres borrarlo?</string>
     <string name="exposed">Puede haber estado expuesto</string>
 
-    <string name="story1">CovidSafe le notifica si puede haber estado expuesto al coronavirus y lo ayuda a usted y a su comunidad a estar más seguros.</string>
+    <string name="story1">Kovid19Track le notifica si puede haber estado expuesto al coronavirus y lo ayuda a usted y a su comunidad a estar más seguros.</string>
     <string name="story2">Aprende si podrías haber estado expuesto. Si recientemente ha estado en contacto cercano con alguien recientemente diagnosticado con COVID-19. Recibirá una notificación.</string>
     <string name="story3">Cuídate a ti mismo y a los demás. Obtenga consejos de autocuidado, conéctese con la guía de salud pública adecuada si ha experimentado síntomas. Y registre ubicaciones que visitó recientemente para proteger a otros.</string>
     <string name="story4">Cualquier información que contribuya está protegida. Obtenga más información sobre cómo se usa y protege su información en la página Privacidad en Configuración.</string>
@@ -306,13 +306,13 @@
     <string name="next_btn_text">próximo</string>
     <string name="previous_btn_text">Anterior</string>
     <string name="how_to_prepare_for_your_interview">Cómo prepararse para su entrevista</string>
-    <string name="interview_preparation_description_text">Durante su entrevista, una enfermera de atención médica recopilará una lista de información crítica para ayudar a identificar a las personas que pudieron haber estado expuestas. Puede preparar una lista de información sobre la que preguntarán en función de la información recopilada a través de CovidSafe. Esta información incluye:</string>
+    <string name="interview_preparation_description_text">Durante su entrevista, una enfermera de atención médica recopilará una lista de información crítica para ayudar a identificar a las personas que pudieron haber estado expuestas. Puede preparar una lista de información sobre la que preguntarán en función de la información recopilada a través de Kovid19Track. Esta información incluye:</string>
     <string name="symptoms_experienced_last_14_days">Síntomas que ha experimentado en los últimos 14 días.</string>
     <string name="location_visited_in_last_14_days">Lugares que ha visitado en los últimos 14 días.</string>
     <string name="people_you_have_been_in_contact_last_14_days">Personas con las que has estado en contacto directo durante los últimos 14 días</string>
     <string name="get_started_text">Empezar</string>
     <string name="frequently_asked_questions">Preguntas frecuentes</string>
-    <string name="about_covidsafe">Sobre CovidSafe</string>
+    <string name="about_covidsafe">Sobre Kovid19Track</string>
     <string name="privacy_and_security">Privacidad y seguridad</string>
     <string name="exposure_history">Historial de exposición</string>
     <string name="what_to_do_if_you_are_sick">Qué hacer si estás enfermo</string>
@@ -328,8 +328,8 @@
     <string name="new_report_text">Nuevo reporte</string>
     <string name="recent_logs">Registros recientes</string>
     <string name="learn_how_we_protect_your_privacy">Conozca cómo protegemos su privacidad</string>
-    <string name="welcome_to_covidsafe_text">Bienvenido a CovidSafe</string>
-    <string name="covidsafe_notifies_you">CovidSafe le notifica si puede haber estado expuesto al coronavirus y lo ayuda a controlar cualquier síntoma que tenga.</string>
+    <string name="welcome_to_covidsafe_text">Bienvenido a Kovid19Track</string>
+    <string name="covidsafe_notifies_you">Kovid19Track le notifica si puede haber estado expuesto al coronavirus y lo ayuda a controlar cualquier síntoma que tenga.</string>
     <string name="clear_all_text">Limpiar todo</string>
     <string name="save_text">Salvar</string>
     <string name="cough_text">Tos</string>
