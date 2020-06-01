@@ -101,6 +101,7 @@
             layout="@layout/resource_links"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             app:layout_constraintTop_toBottomOf="@+id/rel" />
 
 <!--        <include-->

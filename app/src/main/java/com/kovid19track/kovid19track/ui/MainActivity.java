@@ -22,42 +22,40 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.kovid19track.kovid19track.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
-import com.prolificinteractive.materialcalendarview.CalendarDay;
-
-import java.util.Calendar;
-import java.util.Date;
-
+import com.kovid19track.kovid19track.R;
 import com.kovid19track.kovid19track.ble.BluetoothUtils;
-import com.kovid19track.kovid19track.ui.contact_trace.ContactStepFragment;
-import com.kovid19track.kovid19track.ui.contact_trace.HumanOpsAsyncTask;
 import com.kovid19track.kovid19track.gps.ImportLocationHistoryFragment;
 import com.kovid19track.kovid19track.preferences.AppPreferencesHelper;
 import com.kovid19track.kovid19track.preferences.LocaleHelper;
-import com.kovid19track.kovid19track.ui.symptoms.AddEditSymptomsFragment;
-import com.kovid19track.kovid19track.ui.symptoms.SymptomConfirmFragment;
-import com.kovid19track.kovid19track.ui.symptoms.SymptomTrackerFragment;
 import com.kovid19track.kovid19track.ui.contact_log.ContactLogFragment;
 import com.kovid19track.kovid19track.ui.contact_log.ContactLogPageAdapter;
 import com.kovid19track.kovid19track.ui.contact_log.LocationFragment;
 import com.kovid19track.kovid19track.ui.contact_log.PeopleFragment;
+import com.kovid19track.kovid19track.ui.contact_trace.ContactStepFragment;
+import com.kovid19track.kovid19track.ui.contact_trace.HumanOpsAsyncTask;
 import com.kovid19track.kovid19track.ui.health.DiagnosisFragment;
+import com.kovid19track.kovid19track.ui.health.HealthFragment;
 import com.kovid19track.kovid19track.ui.health.TipRecyclerViewAdapter;
 import com.kovid19track.kovid19track.ui.notif.HistoryRecyclerViewAdapter;
 import com.kovid19track.kovid19track.ui.notif.NotifRecyclerViewAdapter;
 import com.kovid19track.kovid19track.ui.onboarding.PermissionFragment;
 import com.kovid19track.kovid19track.ui.settings.PermUtils;
 import com.kovid19track.kovid19track.ui.settings.SettingsFragment;
+import com.kovid19track.kovid19track.ui.symptoms.AddEditSymptomsFragment;
+import com.kovid19track.kovid19track.ui.symptoms.SymptomConfirmFragment;
+import com.kovid19track.kovid19track.ui.symptoms.SymptomTrackerFragment;
 import com.kovid19track.kovid19track.utils.Constants;
 import com.kovid19track.kovid19track.utils.TimeUtils;
 import com.kovid19track.kovid19track.utils.Utils;
-
+import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.wafflecopter.multicontactpicker.ContactResult;
 import com.wafflecopter.multicontactpicker.MultiContactPicker;
 import com.wafflecopter.multicontactpicker.RxContacts.PhoneNumber;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -69,17 +67,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.e("state","main activity oncreate");
+        Log.e("state", "main activity oncreate");
         this.activity = this;
         this.cxt = this;
         setContentView(R.layout.activity_main);
 
         String manufacturer = Build.MANUFACTURER;
         String model = Build.MODEL;
-        Log.e("metadata","BUILD "+android.os.Build.VERSION.SDK_INT+"");
-        Log.e("metadata","RELEASE "+android.os.Build.VERSION.RELEASE+"");
-        Log.e("metadata","MANUFACTURER "+manufacturer);
-        Log.e("metadata","MODEL "+model);
+        Log.e("metadata", "BUILD " + android.os.Build.VERSION.SDK_INT + "");
+        Log.e("metadata", "RELEASE " + android.os.Build.VERSION.RELEASE + "");
+        Log.e("metadata", "MANUFACTURER " + manufacturer);
+        Log.e("metadata", "MODEL " + model);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.getMenu().clear();
@@ -92,8 +90,8 @@ public class MainActivity extends AppCompatActivity {
 
         Constants.MainTipAdapter = new TipRecyclerViewAdapter(this, this);
         Constants.DiagnosisTipAdapter = new TipRecyclerViewAdapter(this, this);
-        Constants.NotificationAdapter = new NotifRecyclerViewAdapter(this,this);
-        Constants.HistoryAdapter = new HistoryRecyclerViewAdapter(this,this);
+        Constants.NotificationAdapter = new NotifRecyclerViewAdapter(this, this);
+        Constants.HistoryAdapter = new HistoryRecyclerViewAdapter(this, this);
 
         Utils.minApiCheck(this);
     }
@@ -101,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        Log.e("demo","on new intent");
+        Log.e("demo", "on new intent");
     }
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
@@ -129,63 +127,56 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean menuLogic() {
-        Log.e("menu","menu "+Constants.CurrentFragment.toString());
+        Log.e("menu", "menu " + Constants.CurrentFragment.toString());
         if (Constants.CurrentFragment.getClass().toString().contains(SettingsFragment.class.toString())) {
             FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
             tx.setCustomAnimations(
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right,
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right);
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right,
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right);
             tx.replace(R.id.fragment_container, Constants.MainFragment).commit();
             return true;
-        }
-        else if (Constants.CurrentFragment.getClass().toString().contains(DiagnosisFragment.class.toString())) {
+        } else if (Constants.CurrentFragment.getClass().toString().contains(DiagnosisFragment.class.toString())) {
             FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
             tx.setCustomAnimations(
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right,
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right);
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right,
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right);
             tx.replace(R.id.fragment_container, Constants.HealthFragment).commit();
             return true;
-        }
-        else if (Constants.CurrentFragment.getClass().toString().contains(AddEditSymptomsFragment.class.toString())) {
-            Log.e("menu","back on add symptoms");
+        } else if (Constants.CurrentFragment.getClass().toString().contains(AddEditSymptomsFragment.class.toString())) {
+            Log.e("menu", "back on add symptoms");
             FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
             tx.setCustomAnimations(
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right,
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right);
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right,
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right);
             if (Constants.entryPoint.equals("main")) {
                 tx.replace(R.id.fragment_container, Constants.MainFragment).commit();
-            }
-            else {
+            } else {
                 tx.replace(R.id.fragment_container, Constants.HealthFragment).commit();
             }
             return true;
-        }
-        else if (Constants.CurrentFragment.getClass().toString().contains(SymptomConfirmFragment.class.toString())) {
+        } else if (Constants.CurrentFragment.getClass().toString().contains(SymptomConfirmFragment.class.toString())) {
             FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
             tx.setCustomAnimations(
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right,
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right);
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right,
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right);
             if (Constants.entryPoint.equals("main")) {
                 tx.replace(R.id.fragment_container, Constants.MainFragment).commit();
-            }
-            else {
+            } else {
                 tx.replace(R.id.fragment_container, Constants.HealthFragment).commit();
             }
             return true;
-        }
-        else if (Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())) {
+        } else if (Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())) {
             FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
             tx.setCustomAnimations(
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right,
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right);
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right,
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right);
             tx.replace(R.id.fragment_container, Constants.HealthFragment).commit();
             return true;
-        }
-        else if (Constants.CurrentFragment.getClass().toString().contains(ImportLocationHistoryFragment.class.toString())) {
+        } else if (Constants.CurrentFragment.getClass().toString().contains(ImportLocationHistoryFragment.class.toString())) {
             FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
             tx.setCustomAnimations(
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right,
-                    R.anim.enter_left_to_right,R.anim.exit_left_to_right);
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right,
+                    R.anim.enter_left_to_right, R.anim.exit_left_to_right);
             tx.replace(R.id.fragment_container, Constants.SettingsFragment).commit();
             return true;
         }
@@ -194,8 +185,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode,resultCode,data);
-        Log.e("state","onactivityresult "+requestCode+","+resultCode);
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.e("state", "onactivityresult " + requestCode + "," + resultCode);
         boolean hasBlePerms = Utils.hasBlePermissions(getApplicationContext());
         if (requestCode == 0) {
             if (resultCode == -1) {
@@ -203,20 +194,17 @@ public class MainActivity extends AppCompatActivity {
                     AppPreferencesHelper.setBluetoothEnabled(this);
                     if (!Constants.LoggingServiceRunning) {
                         Utils.startLoggingService(this);
-                        Log.e("ble","ble switch logic");
-                        PermUtils.transition(false,this);
-                    }
-                    else {
-                        Log.e("ble","ble switch logic2");
+                        Log.e("ble", "ble switch logic");
+                        PermUtils.transition(false, this);
+                    } else {
+                        Log.e("ble", "ble switch logic2");
                         BluetoothUtils.startBle(this);
                     }
                 }
-            }
-            else if (resultCode == 0) {
+            } else if (resultCode == 0) {
                 Utils.updateSwitchStates(this);
             }
-        }
-        else if(requestCode == 2) {
+        } else if (requestCode == 2) {
             if (data != null) {
                 Uri contactData = data.getData();
                 Cursor c = getContentResolver().query(contactData, null, null, null, null);
@@ -238,8 +226,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 c.close();
             }
-        }
-        else if (requestCode == 3) {
+        } else if (requestCode == 3) {
             if (data != null) {
                 List<ContactResult> results = MultiContactPicker.obtainResult(data);
                 String email = null;
@@ -270,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        Log.e("menu","oncreate menu");
+        Log.e("menu", "oncreate menu");
         getMenuInflater().inflate(R.menu.mymenu, menu);
         Constants.menu = menu;
         menu.findItem(R.id.mybutton).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
@@ -285,15 +272,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calSetup() {
-        Log.e("date","cal setup");
+        Log.e("date", "cal setup");
         Calendar myCalendar = Calendar.getInstance();
 
         if (Constants.CurrentFragment.getClass().toString().contains(Constants.LocationFragment.getClass().toString())) {
-            Log.e("date","contact");
+            Log.e("date", "contact");
             myCalendar = Constants.contactLogMonthCalendar;
-        }
-        else if (Constants.CurrentFragment.getClass().toString().contains(Constants.HealthFragment.getClass().toString())) {
-            Log.e("date","symptom");
+        } else if (Constants.CurrentFragment.getClass().toString().contains(Constants.HealthFragment.getClass().toString())) {
+            Log.e("date", "symptom");
             myCalendar = Constants.symptomTrackerMonthCalendar;
         }
 
@@ -301,24 +287,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear,
                                   int dayOfMonth) {
-                Log.e("date","ondateset");
+                Log.e("date", "ondateset");
             }
         };
 
         int yyyy = myCalendar.get(Calendar.YEAR);
         int mm = myCalendar.get(Calendar.MONTH);
         int dd = myCalendar.get(Calendar.DAY_OF_MONTH);
-        Log.e("time","setting month "+mm);
-        Log.e("time","setting day "+dd);
+        Log.e("time", "setting month " + mm);
+        Log.e("time", "setting day " + dd);
         DatePickerDialog dialog = new DatePickerDialog(activity, dateListener,
-                yyyy,mm,dd);
+                yyyy, mm, dd);
 
         SharedPreferences prefs = getSharedPreferences(Constants.SHARED_PREFENCE_NAME, Context.MODE_PRIVATE);
         int days = prefs.getInt(getString(R.string.infection_window_in_days_pkeys), Constants.DefaultInfectionWindowInDays);
 
         Calendar finalMyCalendar = myCalendar;
 
-        dialog.getDatePicker().init(yyyy,mm,dd, new DatePicker.OnDateChangedListener() {
+        dialog.getDatePicker().init(yyyy, mm, dd, new DatePicker.OnDateChangedListener() {
             @Override
             public void onDateChanged(DatePicker datePicker, int i, int i2, int i3) {
                 finalMyCalendar.set(i, i2, i3);
@@ -338,25 +324,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 Constants.menu.findItem(R.id.mybutton).setIcon(R.drawable.calendar);
                 int year = finalMyCalendar.get(Calendar.YEAR);
-                int month = finalMyCalendar.get(Calendar.MONTH)+1;
+                int month = finalMyCalendar.get(Calendar.MONTH) + 1;
                 int day = finalMyCalendar.get(Calendar.DAY_OF_MONTH);
-                Log.e("date","ok "+year+","+month+","+day);
-              
+                Log.e("date", "ok " + year + "," + month + "," + day);
+
                 Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
                 if (fragment instanceof ContactLogFragment && fragment.isVisible()) {
                     TabLayout layout = fragment.getView().findViewById(R.id.tabLayout);
-                    if(layout != null){
+                    if (layout != null) {
                         if (layout.getSelectedTabPosition() == 0) {
-                            ContactLogPageAdapter adapter = ((ContactLogPageAdapter)Constants.contactLogViewPager.getAdapter());
+                            ContactLogPageAdapter adapter = ((ContactLogPageAdapter) Constants.contactLogViewPager.getAdapter());
                             Fragment locationFragment = adapter.getItem(0);
-                            if(locationFragment instanceof LocationFragment){
-                                ((LocationFragment) locationFragment).updateLocationView(CalendarDay.from(year, month, day), getApplicationContext());
+                            if (locationFragment instanceof LocationFragment) {
+                                LocationFragment.updateLocationView(CalendarDay.from(year, month, day), getApplicationContext());
                             }
                         }
                     }
-                }
-                else if (Constants.CurrentFragment.getClass().toString().contains(Constants.HealthFragment.getClass().toString())) {
-                    SymptomTrackerFragment.updateFeaturedDate(CalendarDay.from(year,month,day),
+                } else if (Constants.CurrentFragment.getClass().toString().contains(Constants.HealthFragment.getClass().toString())) {
+                    SymptomTrackerFragment.updateFeaturedDate(CalendarDay.from(year, month, day),
                             getApplicationContext(), activity);
                 }
             }
@@ -367,7 +352,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.e("state","main activity onresume");
+        Log.e("state", "main activity onresume");
 
 //        Constants.init(this);
         initView();
@@ -388,25 +373,24 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.e("logme","activity destroyed");
+        Log.e("logme", "activity destroyed");
         try {
             this.unregisterReceiver(BluetoothUtils.bluetoothReceiver);
-        }
-        catch(Exception e) {
-            Log.e("err",e.getMessage());
+        } catch (Exception e) {
+            Log.e("err", e.getMessage());
         }
     }
 
     public void initView() {
         if (Constants.CurrentFragment != null &&
-            !Constants.CurrentFragment.getClass().toString().contains(PermissionFragment.class.toString()) &&
-                !Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())&&
-                !Constants.CurrentFragment.getClass().toString().contains(PeopleFragment.class.toString())&&
+                !Constants.CurrentFragment.getClass().toString().contains(PermissionFragment.class.toString()) &&
+                !Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString()) &&
+                !Constants.CurrentFragment.getClass().toString().contains(PeopleFragment.class.toString()) &&
                 !Constants.CurrentFragment.getClass().toString().contains(LocationFragment.class.toString())) {
-             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.CurrentFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.CurrentFragment).commit();
         } else if (Constants.CurrentFragment != null && Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.ContactTraceFragment).commit();
-        }else if (Constants.CurrentFragment != null && Constants.CurrentFragment.getClass().toString().contains(PeopleFragment.class.toString())) {
+        } else if (Constants.CurrentFragment != null && Constants.CurrentFragment.getClass().toString().contains(PeopleFragment.class.toString())) {
             Bundle data = new Bundle();
             data.putInt("pg", 1);
             if (Constants.ContactLogFragment == null) {
@@ -414,8 +398,7 @@ public class MainActivity extends AppCompatActivity {
             }
             Constants.ContactLogFragment.setArguments(data);
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.ContactLogFragment).commit();
-        }
-        else if (Constants.CurrentFragment != null && Constants.CurrentFragment.getClass().toString().contains(LocationFragment.class.toString())) {
+        } else if (Constants.CurrentFragment != null && Constants.CurrentFragment.getClass().toString().contains(LocationFragment.class.toString())) {
             Bundle data = new Bundle();
             data.putInt("pg", 0);
             if (Constants.ContactLogFragment == null) {
@@ -423,8 +406,7 @@ public class MainActivity extends AppCompatActivity {
             }
             Constants.ContactLogFragment.setArguments(data);
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.ContactLogFragment).commit();
-        }
-        else {
+        } else {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.MainFragment).commit();
 //            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.HealthFragment).commit();
         }
@@ -444,7 +426,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.action_track:
 //                        if (Constants.MainFragmentState.toString().toLowerCase().contains("main")) {
-                            selectedFragment = Constants.MainFragment;
+                        selectedFragment = Constants.MainFragment;
 //                        }
 //                        else if (Constants.MainFragmentState.toString().toLowerCase().contains("settings")) {
 //                            selectedFragment = Constants.SettingsFragment;
@@ -454,14 +436,26 @@ public class MainActivity extends AppCompatActivity {
                         selectedFragment = Constants.ContactLogFragment;
                         break;
                     case R.id.action_report:
-                        selectedFragment = Constants.HealthFragment;
+//                        if (Constants.HealthFragment instanceof HealthFragment) {
+//                            ((HealthFragment) Constants.HealthFragment).isSympton = true;
+//                        }
+                        selectedFragment = Constants.SymptomTrackerFragment;
                         if (Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())) {
                             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.HealthFragment).commit();
                             return true;
                         }
                         break;
                     case R.id.action_settings:
-                        selectedFragment = Constants.FaqFragment;
+
+//                        if (Constants.HealthFragment instanceof HealthFragment) {
+//                            ((HealthFragment) Constants.HealthFragment).isSympton = false;
+//                        }
+                        selectedFragment = Constants.DiagnosisFragment;
+
+                        if (Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())) {
+                            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.HealthFragment).commit();
+                            return true;
+                        }
                         break;
                 }
 

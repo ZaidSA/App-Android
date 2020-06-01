@@ -118,6 +118,7 @@
             android:id="@+id/container_header_lyt"
             layout="@layout/resource_links"
             android:layout_width="fill_parent"
+            android:visibility="gone"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toBottomOf="parent"

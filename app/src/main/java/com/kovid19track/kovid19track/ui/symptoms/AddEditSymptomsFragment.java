@@ -145,7 +145,7 @@ public class AddEditSymptomsFragment extends Fragment {
                     newRecord.setTs(ts);
                     newRecord.setLogTime(TimeUtils.getTime());
                     tx.replace(R.id.fragment_container, new SymptomConfirmFragment(newRecord)).commit();
-                    new SymptomsOpsAsyncTask(getContext(), newRecord).execute();
+                    new SymptomsOpsAsyncTask(getContext(),  newRecord).execute();
                 }
             }
         });

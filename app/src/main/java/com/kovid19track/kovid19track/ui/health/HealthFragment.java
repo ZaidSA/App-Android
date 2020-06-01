@@ -18,9 +18,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import com.kovid19track.kovid19track.R;
 import com.google.android.material.tabs.TabLayout;
-
+import com.kovid19track.kovid19track.R;
 import com.kovid19track.kovid19track.ui.MainActivity;
 import com.kovid19track.kovid19track.utils.Constants;
 
@@ -28,6 +27,8 @@ public class HealthFragment extends Fragment {
 
     private HealthPageAdapter adapter;
     private Context context;
+
+    public Boolean isSympton = true;
 
     @SuppressLint("RestrictedApi")
     @Nullable
@@ -46,26 +47,38 @@ public class HealthFragment extends Fragment {
 //        if (Constants.menu != null && Constants.menu.findItem(R.id.mybutton) != null) {
 //            Constants.menu.findItem(R.id.mybutton).setVisible(true);
 //        }
-        ((MainActivity) getActivity()).getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getActivity().getColor(R.color.white)));
-        ((MainActivity) getActivity()).getSupportActionBar().setShowHideAnimationEnabled(false);
-        ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        ((MainActivity) getActivity()).getSupportActionBar().show();
+//        ((MainActivity) getActivity()).getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getActivity().getColor(R.color.white)));
+//        ((MainActivity) getActivity()).getSupportActionBar().setShowHideAnimationEnabled(false);
+//        ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+//        ((MainActivity) getActivity()).getSupportActionBar().show();
+//
+//        String header_str;
+//        if(isSympton){
+//             header_str = getActivity().getString(R.string.symptoms_header_text);
+//
+//        }else {
+//             header_str = getActivity().getString(R.string.diagnosis_header_text);
+//        }
+////        if (Constants.PUBLIC_DEMO) {
+////            header_str = getActivity().getString(R.string.health_header_text_demo);
+////        }
+//        ((MainActivity) getActivity()).getSupportActionBar().setTitle(Html.fromHtml(header_str));
+//
 
-        String header_str = getActivity().getString(R.string.health_header_text);
-        if (Constants.PUBLIC_DEMO) {
-            header_str = getActivity().getString(R.string.health_header_text_demo);
-        }
-        ((MainActivity) getActivity()).getSupportActionBar().setTitle(Html.fromHtml(header_str));
+        TabLayout tabLayout = view.findViewById(R.id.tabLayout);
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.symptoms_text));
+
 
         Constants.healthViewPager = view.findViewById(R.id.pager);
-        adapter = new HealthPageAdapter(getChildFragmentManager(), getContext());
+        adapter = new HealthPageAdapter(getChildFragmentManager(), getContext(), isSympton);
+
         Constants.healthViewPager.setAdapter(adapter);
 
         Constants.healthViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 //                Log.e("time","onpagescrolled "+position);
-                if (position == 0) {
+                if (isSympton) {
                     if (Constants.menu != null && Constants.menu.findItem(R.id.mybutton) != null) {
                         Constants.menu.findItem(R.id.mybutton).setVisible(true);
                     }
@@ -79,7 +92,7 @@ public class HealthFragment extends Fragment {
             @Override
             public void onPageSelected(int position) {
 //                Log.e("time","onpageselected "+position);
-                if (position == 0) {
+                if (isSympton) {
                     if (Constants.menu != null && Constants.menu.findItem(R.id.mybutton) != null) {
                         Constants.menu.findItem(R.id.mybutton).setVisible(true);
                     }
@@ -95,7 +108,7 @@ public class HealthFragment extends Fragment {
 //                Log.e("time","scrollstatechanged "+state);
             }
         });
-        TabLayout tabLayout = view.findViewById(R.id.tabLayout);
+
         tabLayout.setupWithViewPager(Constants.healthViewPager);
 
         return view;

@@ -5,15 +5,15 @@
     <string name="history_header_text">History</string>
     <string name="permissions_header_text"><![CDATA[<font color=#000000>Select your preferences</font>]]></string>
     <string name="health_header_text"><![CDATA[<font color=#000000>Health</font>]]></string>
-    <string name="health_header_text_demo"><![CDATA[<font color=#000000>Health [DEMO]</font>]]></string>
+    <string name="health_header_text_demo"><![CDATA[<font color=#000000>Health</font>]]></string>
     <string name="contact_header_text"><![CDATA[<font color=#000000>Interview Preparation</font>]]></string>
-    <string name="contact_header_text_demo"><![CDATA[<font color=#000000>Interview Preparation [DEMO]</font>]]></string>
+    <string name="contact_header_text_demo"><![CDATA[<font color=#000000>Interview Preparation</font>]]></string>
     <string name="add_symptoms_header_text"><![CDATA[<font color=#000000>Create New Log</font>]]></string>
     <string name="settings_header_text"><![CDATA[<font color=#000000>Settings</font>]]></string>
     <string name="help_header_text"><![CDATA[<font color=#000000>Resources</font>]]></string>
-    <string name="help_header_text_demo"><![CDATA[<font color=#000000>Resources [DEMO]</font>]]></string>
+    <string name="help_header_text_demo"><![CDATA[<font color=#000000>Resources </font>]]></string>
     <string name="contact_log_header_text"><![CDATA[<font color=#000000>Contact Log</font>]]></string>
-    <string name="contact_log_header_text_demo"><![CDATA[<font color=#000000>Contact Log [DEMO]</font>]]></string>
+    <string name="contact_log_header_text_demo"><![CDATA[<font color=#000000>Contact Log</font>]]></string>
     <string name="warning_header_text"><![CDATA[<font color=#000000>Diagnosis Report</font>]]></string>
     <string name="symptom_help_text">Use this form to provide a daily report of any symptoms you have. You may submit this form once a day.</string>
     <string name="warning_help_text">You\'ve received a positive diagnosis from your healthcare provider. To confirm your diagnosis, please provider your credentials below.</string>
@@ -257,13 +257,14 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="turn_loc_on">We need location services enabled to send your infection report. Please enable location services permission.</string>
     <string name="turn_loc_on2">We need location services enabled to check for announcements. Please enable location services permission.</string>
 
-    <string name="logging">Limited trace data is being collected. We keep your identity anonymous.<![CDATA[<font color=#8d55e9><br/><b><a href="https://covidsafe.cs.washington.edu/">Learn More</a></b></font>]]></string>
-    <string name="stopping">Turn broadcasting on to improve the accuracy of your notifications. <![CDATA[<font color=#8d55e9><br/><b><a href="https://covidsafe.cs.washington.edu/">Learn More</a></b></font>]]></string>
+    <string name="logging">Limited trace data is being collected. We keep your identity anonymous.<![CDATA[<font color=#8d55e9><br/></font>]]></string>
+    <string name="stopping">Turn broadcasting on to improve the accuracy of your notifications. <![CDATA[<font color=#8d55e9><br/></font>]]></string>
     <string name="learn_about_us">Download and learn more about the Kovid19Track app at </string>
     <string name="select_share">Select a sharing option</string>
     <string name="faq">FAQ</string>
     <string name="kingCountyLink">https://kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx</string>
-    <string name="covidSiteLink">https://covidsafe.cs.washington.edu/</string>
+<!--    <string name="covidSiteLink"> https://covidsafe.cs.washington.edu/</string>-->
+    <string name="covidSiteLink"> http://51.143.46.242:3000/</string>
     <string name="covidSiteFaqLink">https://covidsafe.cs.washington.edu/#faq</string>
     <string name="privacyLink1"><![CDATA[<font color=#8d55e9><a href="https://covidsafe.cs.washington.edu/">Learn more.</a></font>]]></string>
     <string name="privacy_link"><![CDATA[<font color=#FFFFFF><a href="http://www.uw.edu">Privacy  |  </a></font>]]></string>
@@ -402,7 +403,7 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="dismiss_text">Dismiss</string>
     <string name="disclaimer_text">Disclaimer</string>
     <string name="cdc_guidance_text" comment="button string for taking the user to the CDC guidance">CDC Guidance</string>
-    <string name="symptom_tracker_text" comment="symptom tracker text">Symptom Tracker [DEMO]</string>
+    <string name="symptom_tracker_text" comment="symptom tracker text">Symptom Tracker</string>
     <string name="time_am">AM</string>
     <string name="time_pm">PM</string>
     <string name="saved_text">Saved</string>
@@ -513,4 +514,6 @@ You can prepare a list of informaton they will ask about based on information co
     <string name="language">Language</string>
     <string name="english">English</string>
     <string name="spanish">Spanish</string>
+    <string name="symptoms_header_text"><![CDATA[<font color=#000000>Symptoms</font>]]></string>
+    <string name="diagnosis_header_text"><![CDATA[<font color=#000000>Diagnosis</font>]]></string>
 </resources>

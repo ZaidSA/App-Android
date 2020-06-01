@@ -65,11 +65,15 @@ public class DiagnosisFragment extends Fragment {
 //        upArrow.setColorFilter(getActivity().getResources().getColor(R.color.black), PorterDuff.Mode.SRC_ATOP);
 //        ((MainActivity) getActivity()).getSupportActionBar().setHomeAsUpIndicator(upArrow);
 
-        String header_str = getActivity().getString(R.string.health_header_text);
+        String header_str = getActivity().getString(R.string.diagnosis_header_text);
         if (Constants.PUBLIC_DEMO) {
-            header_str = getActivity().getString(R.string.health_header_text_demo);
+            header_str = getActivity().getString(R.string.diagnosis_header_text);
         }
         ((MainActivity) getActivity()).getSupportActionBar().setTitle(Html.fromHtml(header_str));
+
+        if (Constants.menu != null && Constants.menu.findItem(R.id.mybutton) != null) {
+            Constants.menu.findItem(R.id.mybutton).setVisible(false);
+        }
 
         RecyclerView rview = view.findViewById(R.id.recyclerViewTipsDiagnosis);
         rview.setAdapter(Constants.DiagnosisTipAdapter);

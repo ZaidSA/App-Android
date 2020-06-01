@@ -26,6 +26,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:paddingBottom="15dp"
             android:layout_height="wrap_content">
 
             <TextView
@@ -83,6 +84,7 @@
                 android:backgroundTint="@color/white"
                 android:text="@string/what_happen_when_i_submit_report"
                 android:textAllCaps="false"
+                android:visibility="gone"
                 android:textColor="@color/purpleLight"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

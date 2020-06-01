@@ -91,6 +91,7 @@
     <include
         android:id="@+id/container_header_lyt"
         layout="@layout/resource_links"
+        android:visibility="gone"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/recyclerViewDiagnosis" />

@@ -31,7 +31,7 @@ public class SymptomUtils {
         Constants.entryPoint = entryPoint;
         TextView title = (TextView)view.findViewById(R.id.symptomTrackerTitle);
         if (Constants.PUBLIC_DEMO && !title.getText().toString().contains("DEMO")) {
-            title.setText(title.getText().toString()+" [DEMO]");
+            title.setText(title.getText().toString());
         }
         ImageView amImage  = (ImageView)view.findViewById(R.id.amImage);
         ImageView pmImage  = (ImageView)view.findViewById(R.id.pmImage);

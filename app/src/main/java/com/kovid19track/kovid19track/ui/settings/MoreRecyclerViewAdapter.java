@@ -50,11 +50,11 @@ public class MoreRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
         }
         else if (section == 1) {
             titles.add(cxt.getString(R.string.share_text));
-            titles.add(cxt.getString(R.string.about_covidsafe));
-            titles.add(cxt.getString(R.string.faq));
+//            titles.add(cxt.getString(R.string.about_covidsafe));
+//            titles.add(cxt.getString(R.string.faq));
             icons.add(cxt.getDrawable(R.drawable.icon_share2));
-            icons.add(cxt.getDrawable(R.drawable.logo2));
-            icons.add(cxt.getDrawable(R.drawable.icon_faq2));
+//            icons.add(cxt.getDrawable(R.drawable.logo2));
+//            icons.add(cxt.getDrawable(R.drawable.icon_faq2));
         }
     }
 
@@ -82,7 +82,7 @@ public class MoreRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
                 public void onClick(View v) {
                     Intent shareIntent = new Intent(Intent.ACTION_SEND);
                     shareIntent.setType("text/plain");
-                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "CovidSafe");
+                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, R.string.app_name);
                     String shareMessage= av.getString(R.string.learn_about_us)+
                             av.getString(R.string.covidSiteLink);
                     shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);

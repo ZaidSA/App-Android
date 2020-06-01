@@ -62,7 +62,7 @@ public class Constants {
     public static boolean UI_AUTH = false;
     public static boolean WRITE_TO_DISK = false;
     public static boolean DEBUG = false;
-    public static boolean PUBLIC_DEMO = true;
+    public static boolean PUBLIC_DEMO = false;
     public static boolean NARROWCAST_ENABLE = true;
     public static boolean USE_LAST_QUERY_TIME = true;
     public static boolean PAYLOAD_CHECK = true;
@@ -137,6 +137,7 @@ public class Constants {
     //GPS_TIME_INTERVAL and GPS_LOCATION_INTERVAL used to control frequency of location updates
     //to optimize for power, note that GPS_TIME_INTERVAL is the primary method by which
     // power is conserverd.
+
     public static final int GPS_TIME_INTERVAL_IN_MINUTES = 10;
     public static final int GPS_TIME_INTERVAL_IN_MILLISECONDS = 1000*60*GPS_TIME_INTERVAL_IN_MINUTES;
 

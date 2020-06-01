@@ -64,11 +64,15 @@ public class SymptomTrackerFragment extends Fragment {
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         ((MainActivity) getActivity()).getSupportActionBar().show();
 
-        String header_str = getActivity().getString(R.string.health_header_text);
+        String header_str = getActivity().getString(R.string.symptoms_header_text);
         if (Constants.PUBLIC_DEMO) {
-            header_str = getActivity().getString(R.string.health_header_text_demo);
+            header_str = getActivity().getString(R.string.symptoms_header_text);
         }
         ((MainActivity) getActivity()).getSupportActionBar().setTitle(Html.fromHtml(header_str));
+
+        if (Constants.menu != null && Constants.menu.findItem(R.id.mybutton) != null) {
+            Constants.menu.findItem(R.id.mybutton).setVisible(true);
+        }
 
         RecyclerView rview = view.findViewById(R.id.recyclerViewSymptomHistory);
         symptomHistoryAdapter = new SymptomHistoryRecyclerViewAdapter(getActivity(), view);

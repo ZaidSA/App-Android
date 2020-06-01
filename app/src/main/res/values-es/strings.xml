@@ -5,15 +5,15 @@
     <string name="history_header_text">Historia</string>
     <string name="permissions_header_text"><![CDATA[<font color=#000000>Selecciona tus preferencias</font>]]></string>
     <string name="health_header_text"><![CDATA[<font color=#000000>Salud</font>]]></string>
-    <string name="health_header_text_demo"><![CDATA[<font color=#000000>Salud [DEMO]</font>]]></string>
+    <string name="health_header_text_demo"><![CDATA[<font color=#000000>Salud</font>]]></string>
     <string name="contact_header_text"><![CDATA[<font color=#000000>Preparación de entrevistas</font>]]></string>
-    <string name="contact_header_text_demo"><![CDATA[<font color=#000000>Preparación de entrevistas [DEMO]</font>]]></string>
+    <string name="contact_header_text_demo"><![CDATA[<font color=#000000>Preparación de entrevistas</font>]]></string>
     <string name="add_symptoms_header_text"><![CDATA[<font color=#000000>Crear nuevo registro</font>]]></string>
     <string name="settings_header_text"><![CDATA[<font color=#000000>Configuraciones</font>]]></string>
     <string name="help_header_text"><![CDATA[<font color=#000000>Recursos</font>]]></string>
-    <string name="help_header_text_demo"><![CDATA[<font color=#000000>Recursos [DEMO]</font>]]></string>
+    <string name="help_header_text_demo"><![CDATA[<font color=#000000>Recursos</font>]]></string>
     <string name="contact_log_header_text"><![CDATA[<font color=#000000>Registro de contacto</font>]]></string>
-    <string name="contact_log_header_text_demo"><![CDATA[<font color=#000000>Registro de contacto [DEMO]</font>]]></string>
+    <string name="contact_log_header_text_demo"><![CDATA[<font color=#000000>Registro de contacto</font>]]></string>
     <string name="warning_header_text"><![CDATA[<font color=#000000>Informe de diagnóstico</font>]]></string>
     <string name="symptom_help_text">Use este formulario para proporcionar un informe diario de cualquier síntoma que tenga. Puede enviar este formulario una vez al día.</string>
     <string name="warning_help_text">Recibió un diagnóstico positivo de su proveedor de atención médica. Para confirmar su diagnóstico, proporcione sus credenciales a continuación.</string>
@@ -27,7 +27,7 @@
     <string name="logging_now_off">El registro ahora está desactivado.</string>
     <string name="inter_prep">Preparación de entrevistas</string>
     <string name="email_subject">Paquete de información de la entrevista de Kovid19Track Contact Tracer</string>
-    <string name="symptom_logs">Registros de síntomas [DEMO]</string>
+    <string name="symptom_logs">Registros de síntomas</string>
     <string name="location_logs">Registros de ubicación</string>
     <string name="contact_logs">Registros de contacto</string>
     <string name="send_email">Enviar correo electrónico</string>
@@ -154,8 +154,8 @@
     <string name="retry">Procesar de nuevo</string>
     <string name="sure">Estoy seguro</string>
 
-    <string name="logging">Se están recopilando datos de seguimiento limitados. Mantenemos su identidad anónima. Obtenga más información.<![CDATA[<font color=#8d55e9><br/><b><a href="https://covidsafe.cs.washington.edu/">Learn More</a></b></font>]]></string>
-    <string name="stopping">Active la transmisión para mejorar la precisión de sus notificaciones. Aprende más<![CDATA[<font color=#8d55e9><br/><b><a href="https://covidsafe.cs.washington.edu/">Learn More</a></b></font>]]></string>
+    <string name="logging">Se están recopilando datos de seguimiento limitados. Mantenemos su identidad anónima. Obtenga más información.<![CDATA[<font color=#8d55e9><br/></font>]]></string>
+    <string name="stopping">Active la transmisión para mejorar la precisión de sus notificaciones. Aprende más<![CDATA[<font color=#8d55e9><br/></font>]]></string>
 
     <string name="turn_loc_on">Necesitamos servicios de ubicación habilitados para enviar su informe de infección. Habilite el permiso de los servicios de ubicación.</string>
     <string name="turn_loc_on2">Necesitamos servicios de ubicación habilitados para verificar los anuncios. Habilite el permiso de los servicios de ubicación.</string>
@@ -163,10 +163,11 @@
     <string name="select_share">Selecciona una opción para compartir</string>
     <string name="faq">Preguntas más frecuentes</string>
     <string name="kingCountyLink">https://kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx</string>
-    <string name="covidSiteLink">https://covidsafe.cs.washington.edu/</string>
+<!--    <string name="covidSiteLink"> https://covidsafe.cs.washington.edu/</string>-->
+    <string name="covidSiteLink"> http://51.143.46.242:3000/</string>
     <string name="covidSiteFaqLink">https://covidsafe.cs.washington.edu/#faq</string>
     <string name="privacyLink1"><![CDATA[<font color=#8d55e9><a href="https://covidsafe.cs.washington.edu/">Aprende más.</a></font>]]></string>
-    <string name="privacy_link"><![CDATA[<font color=#FFFFFF><a href="http://www.uw.edu">Intimidad  |  </a></font>]]></string>
+    <string name="privacy_link"><![CDATA[<font color=#FFFFFF><a href="http://www.uw.edu">Intimidad</a></font>]]></string>
     <string name="terms_link"><![CDATA[<font color=#FFFFFF><a href="http://www.uw.edu">Términos y Condiciones</a></font>]]></string>
 
 
@@ -373,4 +374,7 @@
     <string name="language">Lenguaje</string>
     <string name="english">English</string>
     <string name="spanish">Español</string>
+    <string name="symptoms_header_text"><![CDATA[<font color=#000000>Síntomas</font>]]></string>
+    <string name="diagnosis_header_text"><![CDATA[<font color=#000000>Diagnóstico</font>]]></string>
+
 </resources>

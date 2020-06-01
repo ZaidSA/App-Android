@@ -20,14 +20,14 @@
         android:id="@+id/action_report"
         android:enabled="true"
         android:icon="@drawable/nav2"
-        android:title="@string/bottom_sheet_menu_item_health_report"
+        android:title="@string/symptoms_text"
         app:showAsAction="always|withText" />
 
     <item
         android:id="@+id/action_settings"
         android:enabled="true"
         android:icon="@drawable/nav3"
-        android:title="@string/bottom_sheet_menu_item_resources"
+        android:title="@string/diagnosis_text"
         app:showAsAction="always|withText" />
 
 </menu>

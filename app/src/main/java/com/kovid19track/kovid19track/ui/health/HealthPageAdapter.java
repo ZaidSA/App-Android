@@ -9,40 +9,39 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.kovid19track.kovid19track.R;
-
 import com.kovid19track.kovid19track.utils.Constants;
 
 public class HealthPageAdapter extends FragmentPagerAdapter {
     Context cxt;
-    public HealthPageAdapter(@NonNull FragmentManager fm, Context cxt) {
+    Boolean isSympton;
+
+    public HealthPageAdapter(@NonNull FragmentManager fm, Context cxt, Boolean isSympton) {
         super(fm);
         this.cxt = cxt;
+        this.isSympton = isSympton;
     }
 
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        if (position == 0) {
+        if (isSympton) {
             return Constants.SymptomTrackerFragment;
-        }
-        else if (position == 1) {
+        } else  {
             return Constants.DiagnosisFragment;
         }
-        return null;
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 1;
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        if (position == 0) {
+        if (isSympton) {
             return cxt.getString(R.string.symptoms_text);
-        }
-        else if (position == 1) {
+        } else if (position == 1) {
             return cxt.getString(R.string.diagnosis_text);
         }
         return "";

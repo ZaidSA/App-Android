@@ -63,7 +63,7 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/logo_purple"
+        android:src="@mipmap/ic_launcher_round"
         app:layout_constraintBottom_toBottomOf="@+id/title"
         app:layout_constraintStart_toStartOf="@+id/guidelineV205"
         app:layout_constraintTop_toTopOf="@+id/title" />

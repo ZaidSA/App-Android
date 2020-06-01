@@ -11,9 +11,11 @@ import com.android.volley.toolbox.HurlStack;
 import com.google.gson.Gson;
 
 public class NetworkConstant {
-    public static String BASE_URL = "https://csapi.azurefd.net/api/";
-    public static String API_VERSION = "2020-04-15";
-    public static int TIMEOUT = 10;
+//    public static String BASE_URL = "https://csapi.azurefd.net/api/";
+    public static String BASE_URL = "https://sacovidsafe.azurewebsites.net/api/";
+    public static String API_VERSION = "2020-05-05";
+//    public static String API_VERSION = "2020-04-15";
+    public static int TIMEOUT = 25;
     static RequestQueue requestQueue;
     static Gson gson;
 
