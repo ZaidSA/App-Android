@@ -110,7 +110,7 @@ public class ContactStepFragment extends Fragment {
                                     R.anim.exit_right_to_left,R.anim.exit_right_to_left,
                                     R.anim.exit_right_to_left,R.anim.exit_right_to_left);
                             Constants.contactViewPager.setCurrentItem(1);
-                            tx.replace(R.id.fragment_container, Constants.HealthFragment).commit();
+                            tx.replace(R.id.fragment_container, Constants.DiagnosisFragment).commit();
                         }
                     });
                     prevButton.setVisibility(View.GONE);

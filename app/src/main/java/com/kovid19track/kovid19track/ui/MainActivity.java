@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             tx.setCustomAnimations(
                     R.anim.enter_left_to_right, R.anim.exit_left_to_right,
                     R.anim.enter_left_to_right, R.anim.exit_left_to_right);
-            tx.replace(R.id.fragment_container, Constants.HealthFragment).commit();
+            tx.replace(R.id.fragment_container, Constants.DiagnosisFragment).commit();
             return true;
         } else if (Constants.CurrentFragment.getClass().toString().contains(AddEditSymptomsFragment.class.toString())) {
             Log.e("menu", "back on add symptoms");
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
             if (Constants.entryPoint.equals("main")) {
                 tx.replace(R.id.fragment_container, Constants.MainFragment).commit();
             } else {
-                tx.replace(R.id.fragment_container, Constants.HealthFragment).commit();
+                tx.replace(R.id.fragment_container, Constants.SymptomTrackerFragment).commit();
             }
             return true;
         } else if (Constants.CurrentFragment.getClass().toString().contains(SymptomConfirmFragment.class.toString())) {
@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
             if (Constants.entryPoint.equals("main")) {
                 tx.replace(R.id.fragment_container, Constants.MainFragment).commit();
             } else {
-                tx.replace(R.id.fragment_container, Constants.HealthFragment).commit();
+                tx.replace(R.id.fragment_container, Constants.SymptomTrackerFragment).commit();
             }
             return true;
         } else if (Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())) {
@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
             tx.setCustomAnimations(
                     R.anim.enter_left_to_right, R.anim.exit_left_to_right,
                     R.anim.enter_left_to_right, R.anim.exit_left_to_right);
-            tx.replace(R.id.fragment_container, Constants.HealthFragment).commit();
+            tx.replace(R.id.fragment_container, Constants.DiagnosisFragment).commit();
             return true;
         } else if (Constants.CurrentFragment.getClass().toString().contains(ImportLocationHistoryFragment.class.toString())) {
             FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity {
         if (Constants.CurrentFragment.getClass().toString().contains(Constants.LocationFragment.getClass().toString())) {
             Log.e("date", "contact");
             myCalendar = Constants.contactLogMonthCalendar;
-        } else if (Constants.CurrentFragment.getClass().toString().contains(Constants.HealthFragment.getClass().toString())) {
+        } else if (Constants.CurrentFragment.getClass().toString().contains(Constants.DiagnosisFragment.getClass().toString())) {
             Log.e("date", "symptom");
             myCalendar = Constants.symptomTrackerMonthCalendar;
         }
@@ -440,10 +440,10 @@ public class MainActivity extends AppCompatActivity {
 //                            ((HealthFragment) Constants.HealthFragment).isSympton = true;
 //                        }
                         selectedFragment = Constants.SymptomTrackerFragment;
-                        if (Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())) {
-                            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.HealthFragment).commit();
-                            return true;
-                        }
+//                        if (Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())) {
+//                            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.HealthFragment).commit();
+//                            return true;
+//                        }
                         break;
                     case R.id.action_settings:
 
@@ -452,10 +452,10 @@ public class MainActivity extends AppCompatActivity {
 //                        }
                         selectedFragment = Constants.DiagnosisFragment;
 
-                        if (Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())) {
-                            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.HealthFragment).commit();
-                            return true;
-                        }
+//                        if (Constants.CurrentFragment.getClass().toString().contains(ContactStepFragment.class.toString())) {
+//                            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Constants.HealthFragment).commit();
+//                            return true;
+//                        }
                         break;
                 }
 
